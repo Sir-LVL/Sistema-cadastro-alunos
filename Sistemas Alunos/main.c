@@ -4,8 +4,10 @@
 int main()
 {
     int idade;
-    String curso;
-    char turma, nome[50];
+    char turma, curso, nome[50];
 
+    printf("Escreva seu nome: \n");
+    scanf("$s", nome);
+    printf("%s", nome);
     return 0;
 }
