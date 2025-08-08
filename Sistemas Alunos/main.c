@@ -7,13 +7,13 @@ int main()
     char turma, curso[50], nome[50];
 
     printf("Escreva seu nome: \n");
-    fgets(&nome, 50, stdin);
+    fgets(nome, 50, stdin);
     printf("Digite sua idade: \n");
-    scanf("%d", &idade);
+    scanf(" %i", &idade);
     printf("Digite seu curso: \n");
-    fgets(&curso,50,stdin);
+    scanf(" %s", &curso);
     printf("E por ultimo, digite sua turma: \n");
-    scanf("%c", &turma);
-    printf("Seu Nome é ",nome, " Sua idade é ", idade, " Seu curso ", curso, " Da turma ", turma);
+    scanf(" %c", &turma);
+    printf("Seu nome é %s, tem %i anos, seu curso é %s e sua turma é %c", nome, idade, curso, turma);
     return 0;
 }
